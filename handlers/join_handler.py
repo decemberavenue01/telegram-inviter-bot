@@ -15,7 +15,7 @@ from users_db import add_user, has_seen_intro, mark_intro_sent
 
 router = Router()
 
-BOT_USERNAME = "invitorTeleAdmPan_bot"
+BOT_USERNAME = "RAY_TRADER_BOT"
 OWNER_USERNAME = "ray_trdr"
 
 
@@ -32,12 +32,11 @@ def learn_more_kb(user_id: int) -> InlineKeyboardMarkup:
 
 def get_bonus_kb() -> InlineKeyboardMarkup:
     text = "Активировать протокол"
-    encoded_text = quote(text)
     return InlineKeyboardMarkup(
         inline_keyboard=[
             [InlineKeyboardButton(
                 text="Активировать протокол💬",
-                url=f"https://t.me/{OWNER_USERNAME}?text={encoded_text}"
+                url=f"https://t.me/{OWNER_USERNAME}?text={text}"
             )]
         ]
     )

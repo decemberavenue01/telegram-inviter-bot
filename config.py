@@ -18,4 +18,4 @@ CHANNEL_ID = int(os.getenv("CHANNEL_ID", 0))
 REDIS_HOST = os.getenv("REDIS_HOST", "localhost")
 REDIS_PORT = int(os.getenv("REDIS_PORT", 6379))
 
-USE_REDIS = True
+USE_REDIS = False
